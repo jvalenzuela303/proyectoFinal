@@ -1,12 +1,4 @@
-<!-- Top navigation -->
-<!-- 
-<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0">
-    <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
-  </a>
-</nav>
--->
-<!-- Sidebar navigation -->
+
 <div class="container-fluid">
   <div class="row">
 
@@ -51,20 +43,19 @@
           </div>
         </div>
 
-        <!--
-        <div class="card" style="width: 18rem;">
-            <div class="card-header">
-                {{product.title}}
-              </div>
+   <div class="card" *ngFor="let product of products">
+    <div class="card-header">
+          {{products.title}}
+        </div>
+   
+      <img [src]="product.imagen" class="card-img-top" alt="...">
+      <div class="card-body">
+       
+        <p class="card-text">{{product.descripcion}}</p>
          
-            <img [src]="product.imagen" class="card-img-top" alt="...">
-            <div class="card-body">
-             
-              <p class="card-text">{{product.descripcion}}</p>               
-              
-            </div>
-          </div>       
-        -->
+      </div>
+    </div>
+
  
        
       </div>
