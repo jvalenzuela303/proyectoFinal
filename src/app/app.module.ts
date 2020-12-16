@@ -33,7 +33,7 @@ import { AuthService } from "./shared/services/auth.service";
     SignUpComponent,
     DashboardComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent    
+    VerifyEmailComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,26 @@
   box-sizing: border-box;
 }
 
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+}
+
+.paddingPage{
+  padding-top: 145px; 
+  padding-left: 10rem; 
+  padding-right: 10rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
 html,
 body {
   margin: 0;
@@ -65,7 +85,7 @@ h6 {
   display: table;
   width: 100%;
   height: 100%;
-  background: #3F51B5;
+  background:#3d66a8;
 }
 
 .displayTableCell {
